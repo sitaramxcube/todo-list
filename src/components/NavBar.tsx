@@ -106,7 +106,6 @@ const NavBar = () => {
               variant="h5"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "none" },
@@ -117,6 +116,7 @@ const NavBar = () => {
                 color: "inherit",
                 textDecoration: "none",
               }}
+              onClick={navigateToDashboard}
             >
               LOGO
             </Typography>

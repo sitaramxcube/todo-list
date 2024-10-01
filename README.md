@@ -1,6 +1,7 @@
 # Todo List Application
 
 This project is a simple Todo List application built with authentication and task management functionality. Users can register, log in, manage their todos, and view their profile.
+This application is fully mobile-responsive, designed to work seamlessly across different screen sizes.
 
 ## Features
 
