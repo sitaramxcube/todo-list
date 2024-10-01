@@ -31,9 +31,6 @@ const NavBar = () => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
@@ -63,7 +60,10 @@ const NavBar = () => {
       </Box>
     );
   };
+
+
   const navigateToDashboard = () => navigate("/dashboard");
+  
   return (
     <>
     <AppBar sx={{ mb: "50px", backgroundColor:'#1E88E5' }} position="static" >

@@ -109,12 +109,6 @@ const Dashboard = () => {
     );
   };
 
-  const openEditForm = useCallback((item: any) => {
-    setValue("title", item.title);
-    setValue("description", item.description);
-    // setShowModal(true)
-  }, []);
-
   return (
     <>
       <Box>
@@ -144,7 +138,7 @@ const Dashboard = () => {
                 </Fab>
               </Box>
               <Divider />
-              <TodosList editTodo={openEditForm} />
+              <TodosList />
             </Container>
           </Grid>
           <Grid size={{ md: 2, sm: 0 }}></Grid>

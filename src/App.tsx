@@ -1,5 +1,4 @@
-import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -25,6 +24,7 @@ function App() {
         
         {/* to display nav bar selected components only */}
         <Route element={<NavBar />}>
+        <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
         </Route>

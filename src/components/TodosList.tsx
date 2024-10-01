@@ -31,7 +31,7 @@ interface ToDoData {
   createdAt?: string | any;
 }
 
-const TodosList = ({ editTodo }: { editTodo: (todo: ToDoData) => any }) => {
+const TodosList = () => {
   const allTodos = useSelector((state: any) => state?.todo?.todoList);
   const dispach = useDispatch();
 

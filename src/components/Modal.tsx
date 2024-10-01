@@ -17,7 +17,6 @@ const Modal = ({title, body, onModalClose, isHideCancelBtn}: IModal) => {
     const [open, setOpen] = useState(true);
   
     const handleClose = (status: boolean) => {
-    //   setOpen(false);
       onModalClose(status);
     };
 
