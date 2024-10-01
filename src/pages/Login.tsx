@@ -69,7 +69,7 @@ const Login = () => {
                     margin="normal"
                     type="email"
                     error={!!errors.email}
-                    {...register("email", { required: 'email is required.', min: 3, max: 15 })}
+                    {...register("email", { required: 'email is required.', min: 3 })}
                     helperText={errors.email ? errors.email.message : ""}
                   />
                   <TextField
@@ -82,7 +82,6 @@ const Login = () => {
                     {...register("password", {
                       required: 'password is required.',
                       min: 3,
-                      max: 10,
                     })}
                     error={!!errors.password}
                     helperText={errors.password ? errors.password.message : ""}

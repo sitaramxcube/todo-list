@@ -10,12 +10,10 @@ interface ProtectedRouteProps {
 const ProtectedRouts = ({ children }: any) => {
   const navigate = useNavigate();
   const router = useLocation();
-  console.log(router.pathname);
   const unProtectedRoutes = ["/login", "/register"];
   const isAuthenticated = useSelector(
     (state: any) => state?.login?.token
   );
-  console.log(isAuthenticated);
   const pathName = router?.pathname?.toLocaleLowerCase()
   const pathIsProtected = unProtectedRoutes.indexOf(pathName) !== -1;
 

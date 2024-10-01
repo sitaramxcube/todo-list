@@ -48,16 +48,6 @@ This project is a simple Todo List application built with authentication and tas
    cd todo-list
 
 
-### Explanation of Sections:
-1. **Project Title and Description**: Brief introduction of the app.
-2. **Features**: Highlight all the key features such as registration, login, todo management, and route protection.
-3. **Installation and Setup**: Provides steps to clone the project, install dependencies, and run it locally.
-4. **Technologies Used**: Lists the main libraries and technologies used in the project.
-5. **Folder Structure**: Gives a high-level overview of the project's folder structure.
-6. **License**: Indicates that the project is open-source and links to the license file.
-
-You can customize the content, especially the repository URL, based on your project's specifics.
-
 
 to create react with typescript
 npx create-react-app todo-list --template typescript
