@@ -70,5 +70,3 @@ to store the data we used redux
 npm install react-redux
 npm install @reduxjs/toolkit
 
-
-This block covers the key libraries and tools you're using in the project, as well as the installation commands to set them up. It clearly explains the purpose of each dependency.
