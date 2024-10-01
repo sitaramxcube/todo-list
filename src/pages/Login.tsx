@@ -25,29 +25,31 @@ const Login = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-/**
- * this method generate the token with user id and date now.
- * @param userId 
- * @returns token
- */
+  /**
+   * this method generate the token with user id and date now.
+   * @param userId
+   * @returns token
+   */
   const generateToken = (userId: string) => {
     const timestamp = Date.now(); // Current time in milliseconds
     return `${userId}.${timestamp}`;
   };
-  
+
   /**
    * this method checks the user existed or not after checking navigates to dashboard
    */
   const onSubmit = handleSubmit((data) => {
-    const isUserExisted = allUsers.find((user: any) => user.email === data.email);
-    if(isUserExisted) {
-        dispatch(loginUser({token: generateToken(isUserExisted?.userId)}))
-        router('/dashboard');
+    const isUserExisted = allUsers.find(
+      (user: any) => user.email === data.email
+    );
+    if (isUserExisted) {
+      dispatch(loginUser({ token: generateToken(isUserExisted?.userId) }));
+      router("/dashboard");
     } else {
-        alert('please enter valid details')
+      alert("please enter valid details");
     }
   });
- 
+
   return (
     <>
       <Grid container>
@@ -68,7 +70,10 @@ const Login = () => {
                     margin="normal"
                     type="email"
                     error={!!errors.email}
-                    {...register("email", { required: 'email is required.', min: 3 })}
+                    {...register("email", {
+                      required: "email is required.",
+                      min: 3,
+                    })}
                     helperText={errors.email ? errors.email.message : ""}
                   />
                   <TextField
@@ -79,7 +84,7 @@ const Login = () => {
                     fullWidth
                     margin="normal"
                     {...register("password", {
-                      required: 'password is required.',
+                      required: "password is required.",
                       min: 3,
                     })}
                     error={!!errors.password}

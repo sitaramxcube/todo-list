@@ -7,13 +7,16 @@ This project is a simple Todo List application built with authentication and tas
 ### 1. User Authentication
 - **Registration:**
   - Users can create an account by providing their first name, last name, email, and password.
-  - Passwords are validated to match and meet security standards.
-  - On successful registration, users are redirected to the login page.
+  - The registration form is built using **Material-UI (MUI)** components, combined with **React Hook Form** for form handling and validation.
+  - Passwords are validated to ensure they match and meet security standards.
+  - After successful registration, users are redirected to the login page.
   
 - **Login:**
   - Users can log in with their registered email and password.
-  - Input validation ensures correct credentials are provided.
+  - The login form uses **Material-UI (MUI)** TextFields and Buttons, while **React Hook Form** handles input validation.
+  - Proper feedback is shown for invalid credentials.
   - After logging in, users are redirected to the dashboard.
+
   
 ### 2. Route Protection
 - **Protected Routes:**
@@ -49,6 +52,8 @@ This project is a simple Todo List application built with authentication and tas
 
 
 
+ ```bash
+
 to create react with typescript
 npx create-react-app todo-list --template typescript
 
@@ -64,3 +69,6 @@ npm install react-router-dom
 to store the data we used redux
 npm install react-redux
 npm install @reduxjs/toolkit
+
+
+This block covers the key libraries and tools you're using in the project, as well as the installation commands to set them up. It clearly explains the purpose of each dependency.
