@@ -57,7 +57,7 @@ const Login = () => {
         <Grid size={{ md: 6, sm: 12 }}>
           <Box marginTop={"10%"}>
             <Typography align="center" variant="h6">
-              Welcome to Todo's
+              Welcome to TODO'S
             </Typography>
             <Card>
               <CardContent>

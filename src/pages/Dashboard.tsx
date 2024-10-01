@@ -146,7 +146,7 @@ const Dashboard = () => {
       </Box>
       {showModal && (
         <Modal
-          title="Create Toto"
+          title="Create Todo"
           body={renderFormData()}
           onModalClose={(data) => {
             // setShowModal(false)
